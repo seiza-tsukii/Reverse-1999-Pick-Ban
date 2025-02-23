@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick & Ban - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barre supérieure -->
+    <header class="top-bar">
+        <div class="container">
+            <h1>Pick & Ban</h1>
+            <button id="create-account-btn">Create Account</button>
+        </div>
+    </header>
+
+    <!-- Page d'accueil -->
+    <main class="home-page">
+        <div class="container">
+            <h2>Welcome to Pick & Ban</h2>
+            <div class="actions">
+                <button id="create-game-btn">Create Game</button>
+                <div class="join-game">
+                    <input type="text" id="game-code" placeholder="Enter game code">
+                    <button id="join-game-btn">Join Game</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Encart d'information -->
+    <div class="info-box">
+        <p><strong>How does the pick & ban work for Reverse:1999?</strong></p>
+        <p>
+            Each player participates in the draft, where they will select their 8 characters. Once this is done, both players compose their 2 teams, then complete Limbo-5 and Limbo-6. The player who takes the fewest turns wins the game.
+        </p>
+        <p>
+            This format is inspired by the Genshin Impact pick & ban (which you can find here: <a href="https://genshinbanpick.top/" target="_blank">https://genshinbanpick.top/</a>) created by u/Frostwyrm9x (Reddit). This site was also created with the help of Deepseek (I'm bad at JSON, sorry...), so feel free to customize it!
+        </p>
+        <p>Contact: <a href="mailto:seizahoshino@gmail.com">seizahoshino@gmail.com</a></p>
+    </div>
+
+    <div id="register-form">
+        <h2>Register</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="register()">Register</button>
+    </div>
+
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
