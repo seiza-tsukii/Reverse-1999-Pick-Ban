@@ -34,7 +34,7 @@ const characters = [
     { name: "Kaalaa Baunaa", image: "img/kaalaa_baunaa_icon.webp", tag1: "6✦", tag2: "Mineral", tag3: "Mental", tag4: "DPS" },
     { name: "Shamane", image: "img/shamane_icon.webp", tag1: "6✦", tag2: "Beast", tag3: "Reality", tag4: "Sub-DPS" },
     { name: "Kanjira", image: "img/kanjira_icon.webp", tag1: "5✦", tag2: "Plant", tag3: "Mental", tag4: "Sub-DPS" },
-    { name: "37", image: "img/37_icon.webp", tag1: "6✦", tag2: "Star", tag3: "Mental", tag4: "DPS" },
+    { name: "37", image: "/Reverse-1999-Pick-Ban/images/37_icon.webp", tag1: "6✦", tag2: "Star", tag3: "Mental", tag4: "DPS" },
     { name: "6", image: "img/6_icon.webp", tag1: "6✦", tag2: "Intelligence", tag3: "Mental", tag4: "Support" },
     { name: "Spathodea", image: "img/spathodea_icon.webp", tag1: "6✦", tag2: "Beast", tag3: "Reality", tag4: "DPS" },
     { name: "Ezra", image: "img/ezra_icon.webp", tag1: "6✦", tag2: "Star", tag3: "Mental", tag4: "Shield" },
