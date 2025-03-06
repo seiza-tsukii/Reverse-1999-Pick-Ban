@@ -65,9 +65,6 @@ const characters = [
     { name: "Brimley", image: "img/brimley_icon.webp", tag1: "5✦", tag2: "Beast", tag3: "Mental", tag4: "Sub-DPS" },
     { name: "Barcarola", image: "img/barcarola_icon.webp", tag1: "6✦", tag2: "Star", tag3: "Mental", tag4: "DPS" },
     { name: "Fatutu", image: "img/fatutu_icon.webp", tag1: "6✦", tag2: "Mineral", tag3: "Mental", tag4: "Healer" },
-    { name: "Liang Yue", image: "img/liang_yue_icon.webp", tag1: "6✦", tag2: "Star", tag3: "Reality", tag4: "Sub-DPS" },
-    { name: "Noire", image: "img/noire_icon.webp", tag1: "6✦", tag2: "Plant", tag3: "Mental", tag4: "DPS" },
-    { name: "Loggerhead", image: "img/loggerhead_icon.webp", tag1: "5✦", tag2: "Plant", tag3: "Mental", tag4: "Healer" },
 ];
 
 // État des picks et bans
