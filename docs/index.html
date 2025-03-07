@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick & Ban</title>
+    <link rel="icon" type="image/webp" href="docs/assets/images/icon.webp">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barre supérieure -->
+    <header class="top-bar">
+        <div class="container">
+            <h1>Pick & Ban</h1>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="container">
+        <!-- Infos du tour actuel -->
+        <div class="turn-info">
+            <p id="turn-text"></p>
+        </div>
+
+        <!-- Filtres -->
+        <div class="filters">
+            <div class="filter-group">
+                <strong>Stars :</strong>
+                <button onclick="filterByStar('5✦')">5✦</button>
+                <button onclick="filterByStar('6✦')">6✦</button>
+            </div>
+            <div class="filter-group">
+                <strong>Types :</strong>
+                <button onclick="filterByType('Star')">Star</button>
+                <button onclick="filterByType('Plant')">Plant</button>
+                <button onclick="filterByType('Mineral')">Mineral</button>
+                <button onclick="filterByType('Beast')">Beast</button>
+                <button onclick="filterByType('Spirit')">Spirit</button>
+                <button onclick="filterByType('Intelligence')">Intelligence</button>
+            </div>
+
+            <!-- Saut de ligne avant "DMG Type" -->
+            <div class="filter-separator"></div>
+
+            <div class="filter-group">
+                <strong>DMG Type :</strong>
+                <button onclick="filterByDmgType('Mental')">Mental</button>
+                <button onclick="filterByDmgType('Reality')">Reality</button>
+            </div>
+            <div class="filter-group">
+                <strong>Niche :</strong>
+                <button onclick="filterByNiche('DPS')">DPS</button>
+                <button onclick="filterByNiche('Sub-DPS')">Sub-DPS</button>
+                <button onclick="filterByNiche('Support')">Support</button>
+                <button onclick="filterByNiche('Healer')">Healer</button>
+                <button onclick="filterByNiche('Shield')">Shield</button>
+            </div>
+            <button onclick="resetFilters()">Reset</button>
+        </div>
+
+        <!-- Bans -->
+        <div class="bans-summary">
+            <h2>Bans</h2>
+            <div class="bans-grid" id="bans">
+                <!-- 8 slots pour les bans -->
+                <div class="ban-slot"></div>
+                <div class="ban-slot"></div>
+                <div class="ban-slot"></div>
+                <div class="ban-slot"></div>
+                <div class="ban-slot"></div>
+                <div class="ban-slot"></div>
+                <div class="ban-slot"></div>
+                <div class="ban-slot"></div>
+            </div>
+        </div>
+
+        <!-- Équipes et picks -->
+        <div class="teams">
+            <div class="team" id="team1">
+                <h2>Team 1</h2>
+                <div class="picks-grid" id="team1-picks">
+                    <!-- 8 slots pour les picks de l'équipe 1 (2 lignes de 4) -->
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                </div>
+            </div>
+            <div class="team" id="team2">
+                <h2>Team 2</h2>
+                <div class="picks-grid" id="team2-picks">
+                    <!-- 8 slots pour les picks de l'équipe 2 (2 lignes de 4) -->
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                    <div class="pick-slot"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personnages disponibles -->
+        <div class="characters" id="characters">
+            <!-- Les personnages seront générés par JavaScript -->
+        </div>
+
+        <!-- Encart d'information -->
+        <div class="info-box">
+            <p><strong>How does the pick & ban work for Reverse:1999?</strong></p>
+            <p>
+                Each player participates in the draft, where they will select their 8 characters. Once this is done, both players compose their 2 teams, then complete Limbo-5 and Limbo-6. The player who takes the fewest turns wins the game.
+            </p>
+            <p>
+                This format is inspired by the Genshin Impact pick & ban (which you can find here: <a href="https://genshinbanpick.top/" target="_blank">https://genshinbanpick.top/</a>) created by u/Frostwyrm9x (Reddit). Feel free to customize this site if you want !
+            </p>
+            <p>Contact: <a href="mailto:seizahoshino@gmail.com">seizahoshino@gmail.com</a></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
