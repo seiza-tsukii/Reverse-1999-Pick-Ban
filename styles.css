@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #443627; /* Couleur de secours */
     color: #EFDCAB; /* Couleur du texte principal */
-    background-image: url('/img/background.jpg'); /* Arrière-plan */
+    background-image: url('docs/assets/images/background.jpg'); /* Arrière-plan */
     background-size: cover;
     background-position: center;
     position: relative;
