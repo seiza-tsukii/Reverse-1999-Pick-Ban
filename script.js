@@ -1,6 +1,6 @@
 // Liste des personnages avec images et tags
 const characters = [
-    { name: "Druvis III", image: "./assets/images/Druvis_III_icon.webp", tag1: "6✦", tag2: "Plant", tag3: "Mental", tag4: "Sub-DPS" },
+    { name: "Druvis III", image: "docs/assets/images/druvis_III_icon.webp", tag1: "6✦", tag2: "Plant", tag3: "Mental", tag4: "Sub-DPS" },
     { name: "Lilya", image: "img/lilya_icon.webp", tag1: "6✦", tag2: "Star", tag3: "Reality", tag4: "DPS" },
     { name: "A-Knight", image: "img/a-knight_icon.webp", tag1: "6✦", tag2: "Spirit", tag3: "Reality", tag4: "DPS" },
     { name: "Sotheby", image: "img/sotheby_icon.webp", tag1: "6✦", tag2: "Plant", tag3: "Reality", tag4: "Healer" },
